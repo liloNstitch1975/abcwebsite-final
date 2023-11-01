@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="general.CSS">
+    <title>ABC Ext Contact</title>
+</head>
+
+<style>
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 50%;
+        overflow: hidden;
+    }
+
+   .driggsapt {
+    position: relative; left: -7px; top: -8px;
+   }
+
+   .space {
+    margin-left: 30px;
+   }
+   
+   .emailContainer {
+    width: 50%;
+    background-color: rgba(39, 39, 39, 0.7); 
+    position: absolute; top: 200px; left: 25%;
+    height: 55%;
+    border-radius: 5px;;
+    color: white;
+    
+   }
+
+   .inputs {
+    width: 30%;
+    margin: 15px 30px 15px 30px; 
+    min-height: 25px;
+   }
+
+    img {
+        position: relative; bottom: 70px;
+    }
+
+    
+
+    #sbm-btn {
+        width: 15%; 
+        position: relative; left: 415px; 
+        padding: 5px; 
+        border: 1px solid black; border-radius: 10px; 
+        margin-top: 5px; 
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    #sbm-btn:hover {
+        border-color: white;
+    }
+
+    p {
+        font-size: larger;
+    }
+</style>
+
+<body>
+    <img src="./assets/joewittconsthouse4th.jpg" alt="apt backdrop" class="driggsapt order-0">
+    <aside class="icons">      <!-- icon clickable below -->
+        <div class="i-effect"> <a href="homePage.html">
+            <div class="underline"> 
+            <div class="mt-5"><span class="material-symbols-outlined lgFont">undo</span></div>
+            <div class="mt-1 gallery-i">Return</div> </div> </a>
+        </div>  
+</aside>
+    <div class="emailContainer">
+        <div class="space">
+            <h1>Inquiries</h1>
+            <p>Contact us about your personal build project, partnership opportunities, or estimate bids</p>
+        
+            <form class="formOrder">
+                    <div style="align-items: center;">
+                        <label > <input type="email" placeholder="Your email here" class="inputs"> </label>  
+                        <label > <input type="file" class="inputs"> </label> 
+                    </div>
+
+                    <input type="text" placeholder="Message" class="inputs" style="height: 200px; max-width: 600px; border-radius: 10px; border: solid 1px;"> <br>
+                    <input type="submit" id="sbm-btn"> 
+            </form> </div>
+    </div>
+</body>
+
+    <script>
+        function confirmation() {
+            window.prompt("Your inquiry has been sent to ABC, please allow a few business days to respond")
+        }
+    </script>
+</html>
